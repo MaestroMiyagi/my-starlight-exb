@@ -1,0 +1,144 @@
+---
+description: Explicación de los selectores CSS
+sidebar:
+  order: 4
+title: 'Selectores CSS: Apuntando con Precisión al Estilo'
+---
+
+Los selectores CSS son la clave para aplicar estilos específicos a elementos concretos dentro de tu página web. Son como dardos que apuntan directamente a los elementos HTML que deseas modificar visualmente. Dominar los selectores te permite un control granular sobre el diseño de tu sitio.
+
+# Tipos de Selectores CSS:
+
+## Selector Universal (*):
+
+- **¿Qué hace?**  
+   Selecciona todos los elementos de la página. Útil para aplicar estilos generales, pero úsalo con precaución para evitar conflictos.
+- Ejemplo:
+
+```css {"id":"01J3P1PBP7XTJHKHGCNSQ9J7YM"}
+* {
+  box-sizing: border-box; 
+  /* Aplica el modelo de caja border-box a todos los elementos */
+}
+```
+
+## Selector de Tipo (Etiqueta):
+
+- **¿Qué hace?**  
+   Selecciona todos los elementos de un tipo específico (párrafos, encabezados, etc.).
+- Ejemplo:
+
+```css {"id":"01J3P1VJ8XZCRRFQWNXMP9VXVW"}
+p {
+    font-family: Georgia, serif; 
+    /* Cambia la fuente de todos los párrafos */
+  }
+```
+
+## Selector de Clase (.):
+
+- **¿Qué hace?**  
+   Selecciona todos los elementos que tienen una clase específica. Permite aplicar estilos a múltiples elementos de diferentes tipos.
+- Ejemplo:
+
+```html {"id":"01J3P1X8AZ9TNEMRPBESWKZ288"}
+<style>
+.destacado {
+    background-color: yellow; 
+    /* Resalta el párrafo con un fondo amarillo */
+  }
+  
+</style>
+
+<p class="destacado">Este párrafo es especial.</p>
+```
+
+## Selector de ID (#):
+
+- **¿Qué hace?**  
+   Selecciona un único elemento con un ID específico. Ideal para aplicar estilos únicos a elementos importantes.
+- Ejemplo:
+
+```html {"id":"01J3P2VRQ0BR1THAR462P8SWJS"}
+<style>
+#titulo-principal {
+  font-size: 36px; 
+  /* Aumenta el tamaño de fuente del título principal */
+}
+</style>
+
+<h1 id="titulo-principal">Bienvenido a nuestra página</h1>
+```
+
+## Selector de Atributo ([]):
+
+- **¿Qué hace?**  
+   Selecciona elementos basándose en sus atributos (href, src, title, etc.). Permite una selección más específica.
+- Ejemplo:
+
+```css {"id":"01J3P2VRQ1RD3WX1GYSZ8HSEV8"}
+a[href^="https://"] {
+    color: green;
+    /* Cambia el color de los enlaces externos a verde */
+  }  
+```
+
+## Pseudo-clases (:) y Pseudo-elementos (::):
+
+- **¿Qué hacen?**  
+   Seleccionan elementos en estados específicos (hover, active, focus) o partes específicas de un elemento (::before, ::after).
+- Ejemplo:
+
+```css {"id":"01J3P2X8366R791YE26P34RY0C"}
+a:hover {
+    text-decoration: underline; 
+    /* Subraya el enlace al pasar el ratón por encima */
+  }
+  
+  p::first-letter {
+    font-size: 2em; 
+    /* Aumenta el tamaño de la primera letra de cada párrafo */
+  }  
+```
+
+## Combinadores (>, +, ~, espacio):
+
+- **¿Qué hacen?**  
+   Seleccionan elementos en relación con otros elementos (descendientes, hijos directos, hermanos adyacentes, hermanos generales).
+- Ejemplo:
+
+```css {"id":"01J3P2YNYZ10PTFNB56SVD8ZD4"}
+/* Selecciona todos los elementos 'li' dentro de un 'ul' */
+ul li { 
+    list-style: none;
+  }
+  
+  /* Selecciona solo los elementos 'li' que son hijos directos de un 'ul' */
+  ul > li { 
+    margin-left: 20px;
+  }
+  
+  /* Selecciona el elemento 'p' que viene inmediatamente después de un 'h2' */
+  h2 + p { 
+    font-weight: bold;
+  }
+  
+  /* Selecciona todos los elementos 'p' que vienen después de un 'h2' */
+  h2 ~ p {
+    font-style: italic;
+  }
+  
+```
+
+## Combinando Selectores:
+
+Puedes combinar diferentes tipos de selectores para una selección aún más precisa:
+
+```css {"id":"01J3P2YQ9PR7566KG81V338451"}
+/* Selecciona elementos 'p' con la clase 'destacado' dentro de un  elemento con el ID 'contenido-principal' */
+#contenido-principal p.destacado {
+    border: 2px solid red;
+  }
+  
+```
+Al dominar los selectores CSS, podrás crear diseños web altamente personalizados y adaptables, mejorando la legibilidad y la experiencia del usuario en tu sitio.
