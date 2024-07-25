@@ -1,0 +1,89 @@
+---
+description: Explicación de las tecnologías usadas en el compilador
+sidebar:
+  order: 1
+title: Cimientos del Diseño
+---
+
+Antes de adentrarnos, es crucial comprender las herramientas tecnológicas que sustentan la creación y presentación de contenido en entornos digitales y técnicos. Estas herramientas son como los bloques de construcción que permiten diseñar páginas web, documentos y presentaciones atractivas y funcionales.
+
+## 1. HTML (HyperText Markup Language):
+
+- **¿Qué es?**  
+   El esqueleto de toda página web. HTML es un lenguaje de marcado que define la estructura del contenido, indicando qué es un encabezado, un párrafo, una imagen, un enlace, etc.
+- Ejemplo:
+
+```html {"id":"01J3NZ9DMQC5XWFYPYB21SN2M3"}
+<h1>Este es un encabezado principal</h1>
+<p>Este es un párrafo de texto.</p>
+<img src="imagen.jpg" alt="Descripción de la imagen">
+<a href="https://www.ejemplo.com">Visita nuestro sitio web</a>
+```
+
+- **¿Por qué es importante?**  
+   Proporciona la base sobre la cual se construye el diseño visual y la interactividad de una página web. Sin HTML, no tendríamos la estructura organizada que permite a los navegadores web interpretar y mostrar el contenido correctamente.
+
+## 2. CSS (Cascading Style Sheets):
+
+- **¿Qué es?**  
+   La ropa y el maquillaje de tu página web. CSS es un lenguaje de diseño que controla la apariencia visual de los elementos HTML. Define colores, fuentes, tamaños, márgenes, espaciado y mucho más.
+- Ejemplo:
+
+```css {"id":"01J3NZEA6VQ2Q9F4XNTKHKX68W"}
+h1 {
+    color: blue; /* Cambia el color del encabezado a azul */
+    font-family: Arial, sans-serif; /* Cambia la fuente del encabezado */
+  }
+  
+  p {
+    font-size: 16px; /* Cambia el tamaño de fuente del párrafo */
+  }
+  
+```
+
+**¿Por qué es importante?**  
+Permite separar el contenido (HTML) de la presentación (CSS), lo que facilita el mantenimiento y la modificación del diseño sin tener que cambiar el código HTML subyacente. Además, CSS permite crear diseños visualmente atractivos y adaptables a diferentes dispositivos.
+
+## 3. Bootstrap:
+
+- **¿Qué es?**  
+   Un kit de herramientas de diseño web todo en uno. Bootstrap es un framework CSS que proporciona componentes prediseñados (botones, formularios, menús, etc.) y un sistema de cuadrícula flexible para crear diseños responsivos de manera rápida y sencilla. A diferencia de HTML, Boostrap no tiene un lenguaje propio, su uso es mediante la adición de clases a los elementos HTML.
+- Ejemplo:
+
+```html {"id":"01J3NZHBWBDYSR6S2GQ7T9N57X"}
+<button class="btn btn-primary">Haz clic aquí</button> 
+```
+
+- **¿Por qué es importante?**  
+   Acelera el desarrollo web al evitar tener que escribir CSS desde cero. Bootstrap garantiza que tus diseños se vean bien en diferentes tamaños de pantalla, lo que es crucial en la era de los dispositivos móviles.
+
+## 4. LaTeX:
+
+- **¿Qué es?**  
+   El estándar de oro para la composición tipográfica de documentos técnicos y científicos. LaTeX es un sistema de preparación de documentos que permite crear textos con una calidad tipográfica excepcional, especialmente para fórmulas matemáticas, tablas y gráficos complejos.
+- Ejemplo:
+
+```latex {"id":"01J3NZQ0YEK2C85YQT5RH79NGD"}
+\int_{\infty }\frac{sen^{2}(4x)}{ln(2x)}dx
+```
+
+- **¿Por qué es importante?**  
+   Si necesitas producir documentos que requieran una presentación impecable y profesional, LaTeX es la herramienta preferida. Su capacidad para manejar contenido técnico complejo es insuperable.
+
+## 5. MathJax
+
+- **¿Qué es?**  
+   Un puente entre LaTeX y la web. MathJax es una biblioteca JavaScript que permite mostrar fórmulas matemáticas escritas en LaTeX directamente en páginas web, sin necesidad de instalar software adicional. Una vez integrado Mathjax al sitio, no es necesario definir la importación via CDN en cada momento que se desee utilizar.
+- Ejemplo:
+
+```html {"id":"01J3P01X955EMP7HG84B0M9Y8A"}
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+$$
+E = mc^2
+$$
+```
+
+- **¿Por qué es importante?**  
+   Si tu comunicación interna involucra contenido matemático o científico, MathJax hace que sea fácil incorporar fórmulas complejas en tus páginas web o boletines internos, garantizando una visualización clara y precisa para tus lectores.
