@@ -11,19 +11,16 @@ export default defineConfig({
 				replacesTitle: true
 			  },
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/MaestroMiyagi/my-starlight-exb',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Introducción',
+					link:'/intro/',
 				},
 				{
-					label: 'Acerca de',
-					autogenerate: { directory: 'about' },
+					label: 'Inicio',
+					autogenerate: { directory: 'start' },
 				},
 				{
 					label: 'Reference',
