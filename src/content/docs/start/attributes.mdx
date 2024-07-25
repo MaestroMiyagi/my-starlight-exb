@@ -1,0 +1,131 @@
+---
+description: Atributos HTML
+title: Atributos HTML
+sidebar:
+  order: 2
+---
+
+Comprender los atributos HTML es fundamental para trabajar con el compilador, ya que estos atributos permiten identificar, agrupar y dar estilo a los elementos HTML generados. Los atributos ``id``, ``class`` y ``style`` son especialmente importantes en este contexto.
+
+## Atributo ``id``
+
+### Propósito:
+
+El atributo ``id`` asigna un identificador único a un elemento HTML dentro de un documento. Esto significa que ningún otro elemento en la misma página puede tener el mismo valor de ``id``.
+
+### Sintaxis:
+
+```HTML
+<elemento id="valor_unico">
+```
+- **elemento**: El nombre del elemento HTML al que se le asignará el id.
+- **valor_unico**: Una cadena de texto que identifica de forma única al elemento. Debe comenzar con una letra y puede contener letras, números, guiones y guiones bajos.
+
+### Ejemplo:
+```HTML
+<div id="encabezado">...</div>
+<p id="parrafo-principal">...</p>
+<button id="boton-enviar">Enviar</button>
+```
+### Uso en el Compilador:
+
+- Selección precisa: El compilador puede usar el id para seleccionar un elemento específico y aplicar transformaciones o modificaciones directamente sobre él.
+- Generación de enlaces: El id se puede usar para crear enlaces internos que dirijan a secciones específicas de la página generada.
+
+## Atributo ``class``
+
+### Propósito:
+El atributo ``class`` se utiliza para clasificar o agrupar elementos HTML que comparten características comunes. Un elemento puede tener múltiples clases, separadas por espacios.
+
+### Sintaxis:
+```HTML
+<elemento class="valor1 valor2 ...">
+```
+- **elemento**: El nombre del elemento HTML al que se le asignarán las clases.
+- **valor1, valor2, ...**: Una o más cadenas de texto que representan las clases del elemento.
+
+### Ejemplo:
+```HTML
+<div class="contenedor destacado">...</div>
+<p class="texto-principal">...</p>
+<button class="boton primario">Enviar</button>
+```
+### Uso en el Compilador:
+- Aplicación de estilos: El compilador puede usar las clases para aplicar estilos CSS a grupos de elementos de manera eficiente.
+- Manipulación en grupo: Las clases permiten seleccionar y modificar múltiples elementos simultáneamente.
+
+## Atributo ``style``
+
+### Propósito:
+El atributo ``style`` permite aplicar estilos CSS directamente a un elemento HTML, sin necesidad de crear una hoja de estilos externa.
+
+### Sintaxis:
+```HTML
+<elemento style="propiedad1: valor1; propiedad2: valor2; ...">
+```
+- **elemento**: El nombre del elemento HTML al que se le aplicarán los estilos.
+- **propiedad1, propiedad2, ...**: Los nombres de las propiedades CSS que se desean modificar.
+- **valor1, valor2, ...**: Los valores correspondientes a cada propiedad.
+
+### Ejemplo:
+```HTML
+<div style="color: blue; font-size: 16px;">...</div>
+<p style="text-align: center;">...</p>
+```
+### Uso en el Compilador:
+- Estilos personalizados: El compilador puede usar el atributo style para generar HTML con estilos específicos que se adapten a las necesidades del proyecto.
+- Prototipado rápido: El style es útil para probar diferentes estilos directamente en el HTML generado, antes de crear una hoja de estilos formal.
+
+## Relación entre ``id``, ``class`` y ``style``
+
+Estos tres atributos se complementan entre sí para brindar un control total sobre la presentación del HTML. Puedes usar ``id`` para seleccionar un elemento específico, ``class`` para agrupar elementos y aplicar estilos comunes, y ``style`` para personalizar aún más la apariencia de cada elemento.
+
+## Ejemplo
+```HTML
+<style>
+  /* Selector de ID */
+  #miEncabezado {
+    background-color: lightblue;
+    padding: 20px;
+  }
+
+  /* Selector de clase */
+  .parrafo-destacado {
+    font-weight: bold;
+    color: darkgreen;
+  }
+</style>
+
+<h1 id="miEncabezado">Este es mi encabezado</h1>
+<p class="parrafo-destacado">Este es un párrafo destacado con estilo externo.</p>
+<p style="font-style: italic; color: purple;">Este es un párrafo con estilo en línea.</p>
+```
+## Explicación:
+
+1. Selector de ID:
+   -  Se utiliza el selector ``#miEncabezado`` para apuntar al elemento ``<h1>`` con el ID "miEncabezado". 
+   - Se aplican estilos específicos a este encabezado: fondo azul claro y relleno.
+2. Selector de clase:
+    - Se utiliza el selector ``.parrafo-destacado`` para apuntar a todos los elementos ``<p>`` con la clase "parrafo-destacado".
+    - Se aplican estilos a estos párrafos: texto en negrita y color verde oscuro.
+3. Estilo en línea:
+    - El tercer párrafo tiene el atributo ``style`` directamente en la etiqueta ``<p>``.
+    - Se aplican estilos específicos a este párrafo: texto en cursiva y color púrpura.
+
+## Resultado:
+
+Al visualizar este código HTML en un navegador, verás:
+
+- Un encabezado (``<h1>``) con fondo azul claro y relleno.
+- Un párrafo (``<p>``) con texto en negrita y color verde oscuro (estilo aplicado a través de la clase).
+- Otro párrafo (``<p>``) con texto en cursiva y color púrpura (estilo aplicado directamente en línea).
+
+Como se muestra a continuación:
+<h1 style="background-color: lightblue">Este es mi encabezado</h1>
+<p style="font-weight: bold;color: darkgreen;">Este es un párrafo destacado con estilo externo.</p>
+<p style="font-style: italic; color: purple;">Este es un párrafo con estilo en línea.</p>
+
+## Observaciones:
+
+- Utilizar selectores de atributos en CSS es una buena práctica para mantener el código HTML más limpio y reutilizable.
+- El atributo ``style`` es útil para casos específicos o para prototipado rápido, pero es recomendable usar hojas de estilos externas para proyectos más grandes y complejos. En este caso es mejor usar el atributo ``style`` fuera del elemento HTML para un mejor mantenimiento y personalización.
