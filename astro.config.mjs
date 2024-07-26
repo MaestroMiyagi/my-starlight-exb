@@ -6,13 +6,12 @@ import robotsTxt from "astro-robots-txt";
 // https://astro.build/config
 export default defineConfig({
   integrations: [starlight({
-    title: 'Docs ExB',
+    title: 'Domcumentos',
     customCss: [
       './src/styles/custom.css',
     ],
     logo: {
-      src: './src/assets/logo.svg',
-      replacesTitle: true
+      src: './src/assets/logo2.png'
     },
     social: {
       github: 'https://github.com/MaestroMiyagi/my-starlight-exb'
