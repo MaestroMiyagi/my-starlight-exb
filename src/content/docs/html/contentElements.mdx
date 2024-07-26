@@ -1,0 +1,137 @@
+---
+description: Breve introducción a HTML y sus aspectos importantes.
+sidebar:
+  order: 4
+title: Elementos de bloque
+---
+
+Los elementos de contenido son los bloques fundamentales con los que construyes la estructura y presentas la información en tus páginas web. A continuación, exploramos los más comunes:
+
+## 1. Encabezados (`<h1>`-`<h6>`): Organización Jerárquica
+
+Los encabezados definen títulos y subtítulos, organizando tu contenido en secciones y subsecciones.  es el nivel más alto (el título principal), mientras que  es el más bajo.
+
+```html {"id":"01J3RGYB5TZ1KZXN5EFBBTDSVY"}
+<h1>Este es un título principal</h1>
+<h2>Este es un subtítulo</h2>
+```
+
+Lo cual resultaría en algo como esto:
+
+<h1>Este es un título principal</h1>
+<h2>Este es un subtítulo</h2>  
+<br/>
+
+## 2. Párrafos (`<p>`): Bloques de Texto
+
+Los párrafos contienen el grueso del texto en tu página, presentando ideas y explicaciones.
+
+```html {"id":"01J3RH1MR2P17W49YFD933VVXK"}
+<p>Este es un párrafo de texto que explica algo importante.</p>
+```
+
+Lo cual resultaría en algo como esto:
+
+<p>Este es un párrafo de texto que explica algo importante.</p>
+
+## 3. Listas (`<ul>`, `<ol>`, `<li>`): Elementos Ordenados y Desordenados
+
+- Listas desordenadas (`<ul>)`: Representan elementos sin un orden específico. Cada elemento se marca con una viñeta.
+- Listas ordenadas (`<ol>`): Presentan elementos en un orden secuencial, numerados automáticamente.
+
+```html {"id":"01J3RH3WEAPC5F8FWTZ9RBYV2D"}
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+  </ul>
+  
+  <ol>
+    <li>Primer paso</li>
+    <li>Segundo paso</li>
+  </ol>  
+```
+
+Lo cual resultaría en algo como esto:
+
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+  </ul>
+  
+  <ol>
+    <li>Primer paso</li>
+    <li>Segundo paso</li>
+  </ol>  
+
+También pueden recibir el atributo `type` para cambiar la viñeta, en el caso de la lista desordenada, por un disco, cuadrado o circulo. Para la lista ordenada puede recibir números romanos y letras en mayúscula y minúscula.
+
+Estos cambios en el atributo `type` se observan de la siguiente manera
+
+```html {"id":"01J3RJ4N3KZ2MDB44EQT1ZK87F"}
+<ol type="A">
+    <li>punto uno</li>
+    <li>punto dos</li>
+    <li>punto tres</li>
+   </ol>
+   
+   <ul type="square">
+    <li>punto uno</li>
+    <li>punto dos</li>
+    <li>punto tres</li>
+   </ul>
+```
+
+<ol type="A">
+ <li>punto uno</li>
+ <li>punto dos</li>
+ <li>punto tres</li>
+</ol>
+
+<ul type="square">
+ <li>punto uno</li>
+ <li>punto dos</li>
+ <li>punto tres</li>
+</ul>
+
+## 4. Tablas (`<table>`, `<tr>`, `<th>`, `<td>`): Organización de Datos
+
+Las tablas estructuran datos en filas y columnas, facilitando la comparación y lectura de información.
+
+```html {"id":"01J3RH56VGWXJ3Q98B1NH18KC9"}
+<table>
+    <tr>
+      <th>Encabezado 1</th>
+      <th>Encabezado 2</th>
+      <th>Encabezado 3</th>
+      <th>Encabezado 4</th>
+      <th>Encabezado 5</th>
+    </tr>
+    <tr>
+      <td>Dato 1</td>
+      <td>Dato 2</td>
+      <td>Dato 3</td>
+      <td>Dato 4</td>
+      <td>Dato 5</td>
+    </tr>
+  </table>  
+```
+
+Lo cual resultaría en algo como esto:
+
+<table>
+    <tr>
+      <th>Encabezado 1</th>
+      <th>Encabezado 2</th>
+      <th>Encabezado 3</th>
+      <th>Encabezado 4</th>
+      <th>Encabezado 5</th>
+    </tr>
+    <tr>
+      <td>Dato 1</td>
+      <td>Dato 2</td>
+      <td>Dato 3</td>
+      <td>Dato 4</td>
+      <td>Dato 5</td>
+    </tr>
+  </table>  
+
