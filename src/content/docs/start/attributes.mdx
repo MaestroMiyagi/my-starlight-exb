@@ -15,7 +15,7 @@ El atributo `id` asigna un identificador único a un elemento HTML dentro de un 
 
 ### Sintaxis:
 
-```HTML
+```html
 <elemento id="valor_unico">
 ```
 
@@ -24,10 +24,11 @@ El atributo `id` asigna un identificador único a un elemento HTML dentro de un 
 
 ### Ejemplo:
 
-```HTML
+```html
 <div id="encabezado">...</div>
 <p id="parrafo-principal">...</p>
 <button id="boton-enviar">Enviar</button>
+
 ```
 
 ### Uso en el Compilador:
@@ -43,8 +44,9 @@ El atributo `class` se utiliza para clasificar o agrupar elementos HTML que comp
 
 ### Sintaxis:
 
-```HTML
+```html {"id":"01J3P3ABJ7XM8FCVJPZF7JM7VP"}
 <elemento class="valor1 valor2 ...">
+
 ```
 
 - **elemento**: El nombre del elemento HTML al que se le asignarán las clases.
@@ -52,10 +54,11 @@ El atributo `class` se utiliza para clasificar o agrupar elementos HTML que comp
 
 ### Ejemplo:
 
-```HTML
+```html {"id":"01J3P3ABJ7XM8FCVJPZHYW0PR8"}
 <div class="contenedor destacado">...</div>
 <p class="texto-principal">...</p>
 <button class="boton primario">Enviar</button>
+
 ```
 
 ### Uso en el Compilador:
@@ -71,8 +74,9 @@ El atributo `style` permite aplicar estilos CSS directamente a un elemento HTML,
 
 ### Sintaxis:
 
-```HTML
+```html {"id":"01J3P3ABJ7XM8FCVJPZJ5CXS9S"}
 <elemento style="propiedad1: valor1; propiedad2: valor2; ...">
+
 ```
 
 - **elemento**: El nombre del elemento HTML al que se le aplicarán los estilos.
@@ -81,9 +85,10 @@ El atributo `style` permite aplicar estilos CSS directamente a un elemento HTML,
 
 ### Ejemplo:
 
-```HTML
+```html {"id":"01J3P3ABJ7XM8FCVJPZK3YA402"}
 <div style="color: blue; font-size: 16px;">...</div>
 <p style="text-align: center;">...</p>
+
 ```
 
 ### Uso en el Compilador:
@@ -97,7 +102,7 @@ Estos tres atributos se complementan entre sí para brindar un control total sob
 
 ## Ejemplo
 
-```HTML
+```html {"id":"01J3P3ABJ7XM8FCVJPZNT6FPNV"}
 <style>
   /* Selector de ID */
   #miEncabezado {
@@ -115,19 +120,23 @@ Estos tres atributos se complementan entre sí para brindar un control total sob
 <h1 id="miEncabezado">Este es mi encabezado</h1>
 <p class="parrafo-destacado">Este es un párrafo destacado con estilo externo.</p>
 <p style="font-style: italic; color: purple;">Este es un párrafo con estilo en línea.</p>
+
 ```
 
 ## Explicación:
 
 1. Selector de ID:
+
    - Se utiliza el selector `#miEncabezado` para apuntar al elemento `<h1>` con el ID "miEncabezado".
    - Se aplican estilos específicos a este encabezado: fondo azul claro y relleno.
 
 2. Selector de clase:
+
    - Se utiliza el selector `.parrafo-destacado` para apuntar a todos los elementos `<p>` con la clase "parrafo-destacado".
    - Se aplican estilos a estos párrafos: texto en negrita y color verde oscuro.
 
 3. Estilo en línea:
+
    - El tercer párrafo tiene el atributo `style` directamente en la etiqueta `<p>`.
    - Se aplican estilos específicos a este párrafo: texto en cursiva y color púrpura.
 
