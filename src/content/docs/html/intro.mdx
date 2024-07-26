@@ -1,0 +1,57 @@
+---
+description: Breve introducción a HTML y sus aspectos importantes.
+sidebar:
+  order: 1
+title: Introducción a los Elementos HTML
+---
+
+Los elementos HTML son los componentes básicos que conforman la estructura y el contenido de una página web. Son como los bloques de construcción que se utilizan para crear todo, desde simples párrafos de texto hasta complejas tablas de datos, imágenes interactivas y formularios de contacto. Cada elemento tiene un propósito específico y define un tipo particular de contenido.
+
+## Estructura básica de un elemento HTML
+
+Un elemento HTML consta de tres partes principales:
+
+Etiqueta de apertura: Indica el inicio del elemento y contiene el nombre del elemento (por ejemplo, `<h1>`, `<p>`, `<img>`). Puede incluir también atributos que proporcionan información adicional sobre el elemento.
+Contenido: El contenido del elemento, que puede ser texto, otros elementos HTML, o ambos.
+Etiqueta de cierre: Indica el final del elemento. Es similar a la etiqueta de apertura, pero incluye una barra diagonal antes del nombre del elemento (por ejemplo, `</h1>`, `</p>`).
+
+```html {"id":"01J3R86FT4MJ4X19E6JN5MPG4H"}
+<p>Este es un párrafo de texto.</p>
+```
+
+En este ejemplo, `<p>` es la etiqueta de apertura, "Este es un párrafo de texto." es el contenido, y `</p>` es la etiqueta de cierre.
+
+```plaintext {"id":"01J3R86FT4MJ4X19E6JQ0GER37"}
+nombre_del_atributo="valor"
+```
+
+## Atributos de los elementos HTML
+
+Los atributos proporcionan información adicional sobre un elemento HTML. Se incluyen dentro de la etiqueta de apertura y tienen el siguiente formato:
+
+- `id`: Identifica de forma única un elemento en la página.
+- `class`: Asigna uno o más nombres de clase a un elemento, lo que permite aplicar estilos CSS a grupos de elementos.
+- `src`: Especifica la ubicación de un recurso externo, como una imagen o un script.
+- `href`: Define el destino de un enlace.
+- `alt`: Proporciona texto alternativo para una imagen, que se muestra si la imagen no se puede cargar.
+
+```html
+<img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200">
+```
+En este ejemplo, la imagen tiene los atributos `src`, `alt`, `width` y `height`.
+
+## Tipos de elementos HTML
+
+Los elementos HTML se pueden clasificar en tres tipos principales:
+
+1. Elementos de bloque: Ocupan todo el ancho disponible y comienzan en una nueva línea. Ejemplos: `<h1>`, `<p>`, `<div>`, `<ul>`, `<ol>`, `<table>`.
+2. Elementos en línea: Solo ocupan el espacio necesario para mostrar su contenido y no comienzan en una nueva línea. Ejemplos: `<a>`, `<strong>`, `<em>`, `<span>`, `<img>`.
+3. Elementos vacíos: No tienen contenido ni etiqueta de cierre. Ejemplos: `<br>`, `<hr>`, `<img>`, `<input>`, `<meta>`.
+
+## Más información
+
+- Lea [HTML: Lenguaje de etiquetas de hipertexto](https://developer.mozilla.org/es/docs/Web/HTML) en MDN Web Docs
+- Lea [HTML Tutorial](https://www.w3schools.com/html/) en W3 School
+- Lea [HTML: HyperText Markup Language](https://devdocs.io/html/) en DevDocs
+
+
