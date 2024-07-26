@@ -1,0 +1,43 @@
+---
+description: Explicación de elementos de agrupación
+sidebar:
+  order: 5
+title: 2. Elementos de agrupación
+---
+
+Los elementos de agrupación son como cajas versátiles que te permiten organizar y estructurar tu contenido HTML de manera lógica. Aunque no tienen un significado visual por sí mismos, son esenciales para aplicar estilos y manipular grupos de elementos.
+
+## `div`: El Contenedor de Bloque
+
+El elemento `<div>` crea un contenedor de bloque, lo que significa que ocupa todo el ancho disponible y genera saltos de línea antes y después. Es ideal para agrupar secciones grandes de contenido, como encabezados, párrafos, imágenes y otros elementos.
+
+```html {"id":"01J3RN1C3V70SSNDG38ZPRBVMN"}
+<div>
+  <h2>Sección de Noticias</h2>
+  <p>Aquí encontrarás las últimas noticias...</p>
+  <img src="noticia1.jpg" alt="Noticia 1">
+</div>
+```
+
+## `span`: El Contenedor en Línea
+
+El elemento `<span>` crea un contenedor en línea, lo que significa que solo ocupa el espacio necesario para su contenido y no genera saltos de línea. Es perfecto para agrupar pequeñas porciones de texto o elementos dentro de una línea, como palabras clave, frases destacadas o etiquetas.
+
+```html {"id":"01J3RN3SJ7JJCA65YQEXX38DEG"}
+<p>Este es un párrafo con una <span class="destacado">palabra clave</span> importante.</p>
+```
+
+## ¿Cuándo usar div y cuándo usar span?
+
+- `div`: Úsalo para agrupar secciones de contenido grandes y crear la estructura general de tu página.
+- `span`: Úsalo para resaltar o aplicar estilos a porciones específicas de texto o elementos dentro de una línea.
+
+```html {"id":"01J3RN54Y3V6Q7YNNS7H4BNNFS"}
+<div class="articulo">
+    <h3>Título del Artículo</h3>
+    <p>Este es un artículo interesante sobre <span class="tema">tecnología</span>.</p>
+    <img src="articulo.jpg" alt="Imagen del artículo">
+  </div>  
+```
+
+En este ejemplo, el `<div>` agrupa todo el artículo, mientras que el `<span>` resalta la palabra "tecnología" dentro del párrafo.
